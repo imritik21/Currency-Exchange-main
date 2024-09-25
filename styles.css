@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    background-color: white;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 45vh;
+    background-image: url("excha.jpg");
+    background-size: cover;
+}
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input{
+    border: 2px solid lightgray;
+    height: 2rem;
+    font-size: 1rem;
+    padding-left: .55rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.select-container img{
+    max-width: 2rem;
+}
+.select-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    /* background-color: red; */
+    border: 1px solid lightgray;
+
+}
+
+form i{
+    margin-top: 1.5rem;
+    color: #adad4a;
+}
+
+.select-container select{
+    font-size: 1rem;
+    width: auto;
+}
+
+.msg{
+    margin: 2rem 0 2rem 0;
+}
+
+form button{
+    height: 2.5rem;
+    background-color: #af4d98;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.container {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+footer h3 {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    footer {
+        font-size: 11px;
+        padding: 8px 0;
+    }
+
+    footer h3 {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .amount input {
+        width: 100%;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .dropdown {
+        flex-direction: column;
+    }
+
+    .dropdown .fa-arrow-right-arrow-left {
+        margin: 10px 0;
+    }
+
+    select {
+        width: 100%;
+    }
+}
+
